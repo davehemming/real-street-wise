@@ -1,0 +1,18 @@
+{
+  "country": "England",
+  "result_count": 300,
+  "longitude": 0.0269195,
+  "area_name": " BR2",
+  "listing": [],
+  "street": "",
+  "town": "",
+  "latitude": 51.380574,
+  "county": "London",
+  "bounding_box": {
+    "longitude_min": "-0.009971",
+    "latitude_min": "51.346089",
+    "longitude_max": "0.06381",
+    "latitude_max": "51.415059"
+  },
+  "postcode": "BR2"
+}

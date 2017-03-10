@@ -1,0 +1,26 @@
+{
+	"test": {
+		"PORT": 3000,
+		"MONGODB_URI": "mongodb://localhost:27017/rswTest",
+		"ZOOPLA_API_URL": "http://localhost:3001/api/v1/property_listings.js",
+		"ZOOPLA_API_KEY": "key",
+		"ZOOPLA_API_MIN_PAGE_SIZE": 100,
+		"POLICE_UK_DATA_API_URL": "https://data.police.uk/api/crimes-street/all-crime"
+	},
+	"development": {
+		"PORT": 3000,
+		"MONGODB_URI": "mongodb://localhost:27017/rsw",
+		"ZOOPLA_API_URL": "http://localhost:3001/api/v1/property_listings.js",
+		"ZOOPLA_API_KEY": "key",
+		"ZOOPLA_API_MIN_PAGE_SIZE": 100,
+		"POLICE_UK_DATA_API_URL": "https://data.police.uk/api/crimes-street/all-crime"
+	},
+	"production": {
+		"PORT": 3000,
+		"MONGODB_URI": "mongodb://localhost:27017/rsw",
+		"ZOOPLA_API_URL": "http://api.zoopla.co.uk",
+		"ZOOPLA_API_KEY": "key",
+		"ZOOPLA_API_MIN_PAGE_SIZE": 1,
+		"POLICE_UK_DATA_API_URL": "https://data.police.uk/api/crimes-street/all-crime"
+	}
+}

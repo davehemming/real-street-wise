@@ -1,0 +1,24 @@
+{
+  "name": "rsw-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rsw-model": "1.0.0",
+    "request": "^2.73.0",
+    "axios": "^0.13.1"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.7.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "moxios": "^0.3.0",
+    "sinon": "^1.17.7"
+  }
+}

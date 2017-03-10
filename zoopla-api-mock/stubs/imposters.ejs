@@ -1,0 +1,14 @@
+{
+  "useCORS": true,
+  "imposters": [
+      {
+      "port": 3001,
+      "useCORS": true,
+      "protocol": "http",
+      "stubs": [
+        <% include cors/cors.ejs %>,
+        <% include property-listings/stub.ejs %>
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@aramk/zoopla-api-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel mountebank watch",
+    "mountebank": "mb --configfile stubs/imposters.ejs --allowInjection",
+    "stop": "kill -9 $(lsof -t -i:3001 -sTCP:LISTEN) || true",
+    "restart": "npm-run-all stop mountebank",
+    "watch": "chokidar 'assets/**/*.ejs' 'assets/**/*.json' 'stubs/**/*.ejs' -c 'npm run restart' --silent"
+  },
+  "author": "Aram Kocharyan <akarmenia@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "npm-run-all": "^4.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.15.0",
+    "mountebank": "^1.8.0"
+  }
+}

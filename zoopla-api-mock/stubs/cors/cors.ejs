@@ -1,0 +1,34 @@
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "OPTIONS"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE",
+          "Access-Control-Allow-Headers": "${ALLOW-HEADERS}"
+        }
+      },
+      "_behaviors": {
+        "copy": [
+          {
+            "from": {
+              "headers": "Access-Control-Request-Headers"
+            },
+            "into": "${ALLOW-HEADERS}",
+            "using": {
+              "method": "regex",
+              "selector": ".+"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
